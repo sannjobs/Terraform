@@ -19,4 +19,4 @@ jobs:
         with:
           terraform_version: "1.8.5"
       - name: terraform format
-        run: terraform fmt
+        run: terraform fmt -check -diff
