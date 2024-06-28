@@ -1,0 +1,16 @@
+---
+name: deploy
+on:
+  push:
+    branches:
+      - main
+
+
+jobs:
+  terrafor-format:
+    name: Terraform-format
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Chechout
+        uses: actions/checkout@v4
